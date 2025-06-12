@@ -10,7 +10,7 @@ public class connection {
 
     public connection(){
         try {
-            connection = DriverManager.getConnection("jdbc:mysql://hotelms.cbmsgiue46ql.eu-north-1.rds.amazonaws.com:3306/hotelMS", "falsifier", "Lamborghini7744");
+            connection = DriverManager.getConnection("jdbc:mysql://<your db address>:3306/hotelMS", "username", "DB password");
             statement = connection.createStatement();
         }catch (Exception e){
             e.printStackTrace();
