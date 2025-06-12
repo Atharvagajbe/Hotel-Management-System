@@ -3,7 +3,7 @@ use hotelMS;
 show databases;
 create table login(username varchar(25), password varchar(25));
 select * from login;
-insert into login values('Falsifier', '123456789');
+insert into login values('user', 'pass');
 create table room(roomnumber varchar(20), availability varchar(20), cleaning_status varchar(20), price varchar(20), bed_type varchar(20));
 select * from room;
 create table employee(name varchar(20), age varchar(20), gender varchar(20), job varchar(20), salary varchar(20), phone varchar(20), email varchar(20), aadhar varchar(20));
@@ -12,7 +12,7 @@ create table driver(name varchar(20), age varchar(20), gender varchar(20), compa
 select * from driver;
 create table login2(user_name varchar(20), password varchar(20));
 select * from login2;
-insert into login2 values('Falsi', '7744');
+insert into login2 values('user', 'pass');
 alter table login2
 rename column passsword to password;
 create table department(department varchar(80), budget varchar(50));
